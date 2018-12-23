@@ -1,6 +1,7 @@
 rootProject.name = "org.osgi.kt"
 
 includeBundle("org.osgi.core.kt")
+includeBundle("org.osgi.cmpn.kt")
 
 // Includes a projects from the bundles folder and sets the name.
 fun includeBundle(name: String) {

@@ -38,6 +38,9 @@ inline var Bundle.activator: String?
     set(value) { headers.put(Constants.BUNDLE_ACTIVATOR, value)}
 
 
+/**
+ *  The activation policy of this {Bundle}.
+ */
 inline val Bundle.activationPolicy: String?
     get() = headers[Constants.BUNDLE_ACTIVATIONPOLICY]
 

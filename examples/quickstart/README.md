@@ -5,6 +5,8 @@ This example is a ported version of the OSGi enroute quickstart project. The ori
 
 ## Run
 
+### CLI
+
 To create the executable `.jar` file you have to run following command from within the `examples/quickstart` directory:
 
 ``` bash
@@ -23,3 +25,7 @@ of your choice, you should see the string `"TEST"` printed in uppercase letters.
 by changing the last path component of the URL.
 
 To terminate the application press `CTRL + C` in your terminal.
+
+### IntelliJ
+
+If you want to run or debug the application from inside your IDE you need to create a launcher that depends on the gradle export.

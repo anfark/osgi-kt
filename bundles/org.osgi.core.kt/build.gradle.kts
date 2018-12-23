@@ -33,6 +33,7 @@ dependencies {
     compile(kotlin("stdlib"))
     compile("org.osgi:osgi.core:7.0.0")
 
+    testImplementation("net.oddpoet:kotlin-expect:1.2.1")
     testImplementation("org.spekframework.spek2:spek-dsl-jvm:${spekVersion}")
     testRuntimeOnly("org.spekframework.spek2:spek-runner-junit5:${spekVersion}")
     testRuntimeOnly(kotlin("reflect"))

@@ -1,0 +1,1 @@
+/Users/roman/Documents/Projekte/osgi/osgi-kt/examples/quickstart/rest/build/classes/kotlin/main/org/osgi/kt/examples/quickstart/rest/Upper.class
