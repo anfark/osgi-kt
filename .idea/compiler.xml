@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="org.osgi.cmpn_main" target="1.8" />
+      <module name="org.osgi.cmpn_test" target="1.8" />
+      <module name="org.osgi.kt.examples.quickstart.app_main" target="1.8" />
+      <module name="org.osgi.kt.examples.quickstart.app_test" target="1.8" />
+      <module name="org.osgi.kt.examples.quickstart.rest_main" target="1.8" />
+      <module name="org.osgi.kt.examples.quickstart.rest_test" target="1.8" />
+      <module name="org.osgi.service.component.annotations_main" target="1.8" />
+      <module name="org.osgi.service.component.annotations_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

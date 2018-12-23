@@ -1,0 +1,1 @@
+/Users/roman/Documents/Projekte/osgi/osgi-kt/bundles/org.osgi.core.kt/build/classes/kotlin/main/org/osgi/framework/kt/BundleKt.class
