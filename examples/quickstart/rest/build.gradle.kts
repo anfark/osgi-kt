@@ -2,16 +2,7 @@ import aQute.bnd.gradle.BundleTaskConvention
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 
-plugins {
-    kotlin("jvm")
-    id("biz.aQute.bnd.builder")
-}
-
 version = "7.0-SNAPSHOT"
-
-repositories {
-    mavenCentral()
-}
 
 dependencies {
     compile(kotlin("stdlib"))

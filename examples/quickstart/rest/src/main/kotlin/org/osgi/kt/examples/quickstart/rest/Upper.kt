@@ -14,5 +14,5 @@ class Upper {
 
     @GET
     @Path("rest/upper/{param}")
-    fun toUpper(@PathParam("param") param: String) = param.toUpperCase()
+    fun toUpper(@PathParam("param") param: String) = param.capitalize()
 }

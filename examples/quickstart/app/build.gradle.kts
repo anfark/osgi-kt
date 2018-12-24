@@ -3,16 +3,7 @@ import aQute.bnd.gradle.Index
 import aQute.bnd.gradle.Resolve
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
-plugins {
-    kotlin("jvm")
-    id("biz.aQute.bnd.builder")
-}
-
 version = "7.0-SNAPSHOT"
-
-repositories {
-    mavenCentral()
-}
 
 dependencies {
     compile(project(":rest"))//org.osgi.kt.examples.quickstart.rest"))

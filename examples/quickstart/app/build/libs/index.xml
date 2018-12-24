@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="index" increment="1545593580155">
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="index" increment="1545662546320">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.osgi.kt.examples.quickstart.app"/>
@@ -15,10 +15,10 @@
       <attribute name="osgi.wiring.host" value="org.osgi.kt.examples.quickstart.app"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="965" type="Long"/>
+      <attribute name="size" value="964" type="Long"/>
       <attribute name="url" value="app-7.0-SNAPSHOT.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="26540F986B88C781800D6ED2E115C66E321B64269DC5FEBC6E8A58BC47ED476D"/>
+      <attribute name="osgi.content" value="77B495A71C60133C4F81BA39E6EB1F52965D83B6E257087D491B5A73A44FF925"/>
     </capability>
   </resource>
   <resource>
@@ -5558,10 +5558,10 @@
       <attribute name="objectClass" value="org.osgi.kt.examples.quickstart.rest.Upper" type="List&lt;String&gt;"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="size" value="5172" type="Long"/>
+      <attribute name="size" value="5060" type="Long"/>
       <attribute name="url" value="rest-7.0-SNAPSHOT.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="1F13ABCC1AC5682FA54E9EC3922F639303F978EF879E52B014DE62D525D1F08F"/>
+      <attribute name="osgi.content" value="7F708C1AFFAEAD712CA201B15E2A7C4AAB3C4C71F38970C3F8D79E49555F6C79"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=javax.ws.rs))"/>
@@ -5571,6 +5571,9 @@
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=kotlin.jvm.internal))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=kotlin.text))"/>
     </requirement>
     <requirement namespace="osgi.extender">
       <directive name="filter" value="(&amp;(osgi.extender=osgi.component)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))"/>
