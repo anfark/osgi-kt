@@ -2,6 +2,8 @@
 
 ## What
 
+This submodule contains the content of 
+
 ## Why
 See the description of the root project for a motivation.
 

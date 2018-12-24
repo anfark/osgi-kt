@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Run Quickstart" type="JarApplication" factoryName="JAR Application">
+    <option name="JAR_PATH" value="$PROJECT_DIR$/examples/quickstart/app/build/export/app.jar" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <method v="2">
+      <option name="Gradle.BeforeRunTask" enabled="true" tasks="export" externalProjectPath="$PROJECT_DIR$/examples/quickstart/app" vmOptions="" scriptParameters="" />
+    </method>
+  </configuration>
+</component>

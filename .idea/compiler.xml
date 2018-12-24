@@ -2,6 +2,10 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="multi-bundle_api" target="1.8" />
+      <module name="multi-bundle_impl" target="1.8" />
+      <module name="multi-bundle_main" target="1.8" />
+      <module name="multi-bundle_test" target="1.8" />
       <module name="org.osgi.cmpn_main" target="1.8" />
       <module name="org.osgi.cmpn_test" target="1.8" />
       <module name="org.osgi.kt.examples.quickstart.app_main" target="1.8" />

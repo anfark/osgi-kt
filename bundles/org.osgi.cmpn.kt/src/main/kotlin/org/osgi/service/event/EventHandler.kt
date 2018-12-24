@@ -17,7 +17,7 @@ inline fun BundleContext.on(topics: Array<String>, properties: Map<String, Strin
     }, ht)
 }
 
-fun BundleContext.on(topic: String, properties: Map<String, String> = mapOf(), handler: (Event) -> Unit) {
+inline fun BundleContext.on(topic: String, properties: Map<String, String> = mapOf(), crossinline handler: (Event) -> Unit) {
     on(arrayOf(topic), properties, handler)
 }
 
