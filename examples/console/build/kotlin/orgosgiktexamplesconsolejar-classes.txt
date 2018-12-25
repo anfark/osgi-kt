@@ -1,0 +1,1 @@
+/Users/roman/Documents/Projekte/osgi/osgi-kt/examples/console/build/classes/kotlin/main/org/osgi/kt/examples/console/Hello.class
