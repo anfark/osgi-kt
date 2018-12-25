@@ -63,23 +63,17 @@ tasks.create<WriteProperties>("writeConfig") {
         "org.eclipse.equinox.console",
         "org.eclipse.equinox.ds")
 
+    // Reduce all bundle names into one string
     val bundles = configurations["archives"].resolvedConfiguration.resolvedArtifacts
         .map { it.name + if (startBundles.contains(it.name)) "@start" else "" }
         .reduceIndexed { index, bundle, acc -> if (index == 0) bundle else "$acc, $bundle" }
 
 
+    // Set properties of config file
     property("osgi.bundles", "$bundles, $symbolicName")
     property("equinox.use.ds", true)
     property("osgi.noShutdown", true)
     property("eclipse.ignoreApp", true)
-}
-
-// Copy the configuration file into the final application
-tasks.create<Copy>("copyConfig") {
-    group = "help"
-
-    from(file("config.ini"))
-    into(file("$dest/configuration/"))
 }
 
 // Configure build task
@@ -90,13 +84,13 @@ tasks {
         dependsOn("writeConfig")
     }
 
+    // Configure jar task
     "jar"(Jar::class) {
-        dependsOn("copyBundles")
-
-
-        destinationDir = file("build/app")
+        // Create jar inside application directory
+        destinationDir = file(dest)
         archiveName = "$symbolicName.jar"
 
+        // Add OSGi bundle header to manifest, rest will be done by BND
         manifest {
             attributes["Bundle-SymbolicName"] = symbolicName
             attributes["Bundle-Name"] = "Hello Console"

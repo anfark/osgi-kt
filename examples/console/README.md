@@ -11,18 +11,23 @@ for other OSGi projects that want to use Gradle and Kotlin.
 
 ## How
 
-### Build & Run the Application
+### Build
 
-To run and test the application you have to build the project. Enter the root directory of this example and trigger the
-gradle build with `gradle build`.
+To build the project enter the root directory of this example and run:
+ ```bash
+ gradle build
+ ```
+
+### Run
 
 The final application will be assembled inside the `build/app/` directory and will contain the OSGi framework Equinox and
 several other bundles. To start the console application enter:
+
 ```bash
 java -jar build/app/org.eclipse.osgi.jar -console -consoleLog
 ```
 
-Now, you should be inside the OSGi shell. This should be indicated by the `g!` at the start of the line. To check the current
+Now, you are inside the OSGi shell. This should be indicated by the `g!` at the start of the line. To check the current
 state of the OSGi application enter `ss`. You will see a list of bundles, like this one:
 
 ```bash
@@ -46,10 +51,10 @@ id	State       Bundle
 13	RESOLVED    org.osgi.kt.examples.console_0.1.0.SNAPSHOT
 ```
 
-The code of this project is assembled inside the `org.osgi.kt.example.console` bundle. As you can see, it has not been started yet.
-To start the bundle enter the command `start <id>` where `<id>` is the id of the `org.osgi.kt.example.console` bundle. When
-the bundle is started, its service component will immediately activated, which will trigger the execution of the `@Activate`
-annotated method. The result should be similar to this output:
+The code of this project is shipped inside the `org.osgi.kt.example.console` bundle. As you can see, it has not been 
+started yet. To start the bundle enter the command `start <id>` where `<id>` is the id of the `org.osgi.kt.example.console` 
+bundle. When the bundle is started, its service component will immediately activated, which will trigger the execution 
+of the `@Activate` annotated method. The result should be similar to this output:
 
 ```bash
 g! start 13
