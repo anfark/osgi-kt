@@ -22,12 +22,6 @@ val spekVersion = "+"
 
 version = "7.0-SNAPSHOT"
 
-repositories {
-    mavenCentral()
-    maven {
-        url = uri("https://dl.bintray.com/spekframework/spek-dev")
-    }
-}
 
 dependencies {
     compile(kotlin("stdlib"))

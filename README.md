@@ -1,24 +1,24 @@
-# OSGi Kt
+# OSGi.kt
 
 ## What
 
-This project aims to deliver a Kotlin wrapper around the standard OSGi API bundles. These wrapper bundles should add
-minimal overhead and enrich the OSGi API with Kotlin friendly extensions.
+The goal of OSGi.kt is to provide Kotlin extension bundles for the standard OSGi API. These new bundles should introduce
+minimal overhead and enrich the OSGi world with Kotlin friendly extensions.
 
 ## Why
 
-Kotlin is 100% compatible with plain-old Java. Therefore Kotlin can be used in an OSGi environment. To make full use of
-Kotlin idoms in OSGi some small extension are needed.
+Kotlin is 100% compatible with plain-old Java. Therefore, Kotlin can be used in OSGi applications. The extension bundles 
+bring the benefits of the awesome features of Kotlin to OSGi.
 
 ## How
 
-This project contains wrapper bundles for the Core API and the Compendium. The bundles are generated using Gradle and BND.
-The resulting bundles will be uploaded to maven central.
+This project contains extension bundles for the Core API and the OSGi Compendium. The bundles are generated using Gradle 
+and BND. The resulting artifacts will be uploaded to an Maven repository after they reach a stable state.
 
-### Maven/Gradle
+### Gradle
 
-TODO
+TBA
 
-### P2
+### Maven
 
-TODO
+TBA

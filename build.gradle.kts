@@ -2,9 +2,20 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     base
-    kotlin("jvm") version "1.3.11" apply false
+    kotlin("jvm") version "1.3.11"
     id("biz.aQute.bnd.builder") version "4.1.0"
 }
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath("org.osgi:osgi.core:7.0.0")
+    }
+}
+
 
 version = "1.0-SNAPSHOT"
 
@@ -24,6 +35,11 @@ subprojects {
     // Setup default repositories
     repositories {
         mavenCentral()
+
+        // Repo for Spek
+        maven {
+            url = uri("https://dl.bintray.com/spekframework/spek-dev")
+        }
     }
 
     // Check if this is a bundle project

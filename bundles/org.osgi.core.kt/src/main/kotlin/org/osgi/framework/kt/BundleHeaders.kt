@@ -2,6 +2,8 @@ package org.osgi.framework.kt
 
 import org.osgi.framework.Bundle
 import org.osgi.framework.Constants
+import org.osgi.framework.Version
+import java.net.URI
 import java.net.URL
 
 
@@ -228,6 +230,20 @@ inline val Bundle.vendor: String?
  * Manifest header identifying the bundle's version.
  *
  * @see Constants.BUNDLE_VERSION
+ * @see version
  */
-inline val Bundle.version: String?
+inline val Bundle.versionString: String?
     get() = headers[Constants.BUNDLE_VERSION]
+
+/**
+ * Reads the optional {Constants.BUNDLE_VERSION} attribute from the bundle headers.
+ *
+ * Manifest header identifying the bundle's version.
+ *
+ * @see Constants.BUNDLE_VERSION
+ * @see versionString
+ */
+inline val Bundle.version: Version?
+    get() =versionString?.let { Version(it) }
+
+
